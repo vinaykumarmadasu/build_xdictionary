@@ -1,21 +1,38 @@
-.App {
+/* General styling */
+.app {
   font-family: Arial, sans-serif;
-  text-align: center;
-  margin-top: 50px;
+  text-align: left;
+  margin: 20px; /* Ensures everything starts from the left */
+}
+
+h1 {
+  margin-bottom: 10px; /* Reduce space below the title */
+}
+
+/* Search container to align the input and button */
+.search-container {
+  display: flex;
+  align-items: center;
 }
 
 input {
   padding: 5px;
   width: 200px;
-  margin-right: 10px;
+  border: 1px solid #ccc;
 }
 
 button {
   padding: 5px 10px;
+  margin-left: 0; /* No space between input and button */
   cursor: pointer;
 }
 
-p {
-  margin-top: 20px;
+/* Definition container styling */
+.definition-container {
+  margin-top: 10px; /* Adds some space between the input/button and the result */
+}
+
+.definition {
   font-size: 18px;
+  margin-top: 0; /* Ensures definition starts immediately below */
 }

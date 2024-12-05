@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './App.css'; // Assuming you'll style it in this file
+import './App.css'; // Ensure styling is in App.css
 
 const App = () => {
   // Initial dictionary state
@@ -26,9 +26,9 @@ const App = () => {
   };
 
   return (
-    <div className="App">
+    <div className="app">
       <h1>Dictionary App</h1>
-      <div>
+      <div className="search-container">
         <input
           type="text"
           placeholder="Search for a word..."
@@ -37,7 +37,11 @@ const App = () => {
         />
         <button onClick={handleSearch}>Search</button>
       </div>
-      <p><strong>Definition:</strong> {definition}</p>
+      <div className="definition-container">
+        <p className="definition">
+          <strong>Definition:</strong> {definition}
+        </p>
+      </div>
     </div>
   );
 };
