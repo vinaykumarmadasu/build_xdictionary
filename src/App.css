@@ -35,4 +35,10 @@ button {
 .definition {
   font-size: 18px;
   margin-top: 0; /* Ensures definition starts immediately below */
+  display: flex;
+  flex-direction: column;
+}
+
+.definition strong {
+  margin-bottom: 5px; /* Adds some space between 'Definition:' and the actual text */
 }

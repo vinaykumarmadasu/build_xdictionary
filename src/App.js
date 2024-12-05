@@ -38,9 +38,11 @@ const App = () => {
         <button onClick={handleSearch}>Search</button>
       </div>
       <div className="definition-container">
-        <p className="definition">
-          <strong>Definition:</strong> {definition}
-        </p>
+        {/* Ensured both the label and the definition are in the same element */}
+        <div className="definition">
+          <strong>Definition:</strong>
+          <span>{definition}</span>
+        </div>
       </div>
     </div>
   );
